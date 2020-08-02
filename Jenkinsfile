@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("rohinidevops/project1")
+                    app = docker.build("rohinidevops/project2")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
